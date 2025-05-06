@@ -7,6 +7,8 @@ return {
         require'window-picker'.setup()
     end,
     keys = {
-        {"<leader>ww", function() require('window-picker').pick_window() end, desc = "Pick window"}
+        {"<leader>ww", function() require('window-picker').pick_window({
+            hint = 'floating-big-letter'
+        }) end, desc = "Pick window"}
     }
 }
